@@ -19,3 +19,10 @@ Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede
 -->
+
+<!--MILESTONE 0-->
+
+<!--
+DEFINIRE UN ARRAY DI OGGETTI
+-->
+-Creare un array "team", creando in ogni posizione un oggetto {nome: "", ruolo: "", foto: ""}
