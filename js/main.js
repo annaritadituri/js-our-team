@@ -44,3 +44,14 @@ const team = [
 ]
 
 console.log({team});
+
+//MILESTONE 1
+for (let i = 0; i < team.length; i++) {
+
+    console.log(`Il membro del team numero ${i + 1} è:`)
+    
+    console.log(team[i].nome);
+    console.log(team[i].ruolo);
+    console.log(team[i].image);
+
+}

@@ -26,3 +26,10 @@ Organizzare i singoli membri in card/schede
 DEFINIRE UN ARRAY DI OGGETTI
 -->
 -Creare un array "team", creando in ogni posizione un oggetto {nome: "", ruolo: "", foto: ""}
+
+<!--MILESTONE 1-->
+
+<!--
+STAMPARE IN CONSOLE
+-->
+-Creare un ciclo for per stampare tutti gli elementi dell'array di oggetti
