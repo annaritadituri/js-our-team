@@ -3,6 +3,7 @@
 //////////////////////////////////////////////////////////
 
 //MILESTONE 0
+//DEFINIRE UN ARRAY DI OGGETTI
 const team = [
     {
         nome: 'Wayne Barnett',
@@ -43,15 +44,57 @@ const team = [
 
 ]
 
-console.log({team});
+//console.log({team});
 
 //MILESTONE 1
+//STAMPARE ARRAY IN CONSOLE
+/*
 for (let i = 0; i < team.length; i++) {
 
-    console.log(`Il membro del team numero ${i + 1} è:`)
+    console.log(`Il membro del team numero ${i + 1} è:`);
     
     console.log(team[i].nome);
     console.log(team[i].ruolo);
     console.log(team[i].image);
 
+}
+*/
+
+
+//CORREZIONE MILESTONE 1
+
+for (let i = 0; i < team.length; i++) {
+
+    console.log(`Il membro del team numero ${i + 1} è:`);
+    for (let key in team[i]) {
+
+        console.log(`${key}: ${team[i][key]}`)
+
+    }
+
+}
+
+//MILESTONE 2
+//definire variabili
+const ulList = document.getElementById('list');
+
+for (let i = 0; i < team.length; i++) {
+
+    //aggiungere un li per ogni oggetto per la lista presente in HTML
+    const liElement = document.createElement('li');
+    ulList.append(liElement);
+
+    //creare elementi nel DOM per ogni chiave e valore
+    const nomeDom = document.createElement('h2');
+    nomeDom.append(team[i].nome);
+    const ruoloDom = document.createElement('h5');
+    ruoloDom.append(team[i].ruolo);
+    const imageDom = document.createElement('p');
+    imageDom.append(team[i].image);
+    
+    //aggiungere i valori al li
+    liElement.append(nomeDom);
+    liElement.append(ruoloDom);
+    liElement.append(imageDom);
+        
 }
