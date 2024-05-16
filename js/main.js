@@ -89,8 +89,10 @@ for (let i = 0; i < team.length; i++) {
     nomeDom.append(team[i].nome);
     const ruoloDom = document.createElement('h5');
     ruoloDom.append(team[i].ruolo);
-    const imageDom = document.createElement('p');
-    imageDom.append(team[i].image);
+    //MILESTONE 3
+    const imageDom = document.createElement('img');
+    imageDom.src = `../img/${team[i].image}`;
+    console.log(imageDom.src);
     
     //aggiungere i valori al li
     liElement.append(nomeDom);

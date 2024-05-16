@@ -45,3 +45,12 @@ CREARE ELEMENTI NEL DOM
 -Definire una variabile collegata alla ul presente nell'HTML
 --Creare un ciclo for per aggiungere con il metodo append() un li alla lu
 ---Aggiungere i 3 valori associati ad ogni oggetto al li creato con il metodo append()
+
+
+<!--BONUS 1-->
+
+<!--
+CORREGGERE IL PATH
+-->
+-Creare un immagine nel DOM
+--Attribuirgli la src eseguendo l'interpolazione tra "../img/" e il valore della chiave "image" dell'oggetto
